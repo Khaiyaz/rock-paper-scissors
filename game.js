@@ -6,8 +6,6 @@ const getUserChoice = userInput => {
       return userInput;
     } else if (userInput === 'scissors') {
       return userInput;
-    } else if (userInput === 'bomb') {
-      return userInput;
     } else {
       return('Invalid input');
     }
@@ -52,7 +50,7 @@ const getUserChoice = userInput => {
   }
   
   function playGame() {
-    let userChoice = getUserChoice('scissors'); //input user choice here.
+    let userChoice = getUserChoice('rock'); //input user choice here.
     let computerChoice = getComputerChoice();
     console.log(userChoice, computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
