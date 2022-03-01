@@ -52,7 +52,7 @@ const getUserChoice = userInput => {
   function playGame() {
     let userChoice = getUserChoice('rock'); //input user choice here.
     let computerChoice = getComputerChoice();
-    console.log(userChoice, computerChoice);
+    console.log(userChoice, ',', computerChoice);
     console.log(determineWinner(userChoice, computerChoice));
   }
   playGame();
